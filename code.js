@@ -5,8 +5,8 @@
 // the rest of the array.
 function flip(arr, n) 
 {
-  let swap = arr.slice(0, k);
-  let other = arr.slice(k, arr.length);
+  let swap = arr.slice(0, n);
+  let other = arr.slice(n, arr.length);
   swap.reverse();
   arr = swap.concat(other);
   return arr;
