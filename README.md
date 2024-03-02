@@ -30,3 +30,14 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
 
+Number of Comparisons:
+
+There are 2 for loops used, one is to find the max index in the given portion of the array 
+and the other is used to continue the iteration of the entire array, so that the max values
+can be placed at the end of each iteration. Since both for loops iterate over each value in 
+an array, both loops take n time. Then, the max index loop is inside the for loop that iterates
+over each element, because the findMaxIndex function is called inside the main for loop, which makes 
+them nested for loops (n * n). So the asymptotic runtime for the number of comparisons is $\Theta(n^2)$.
+
+Number of Flips:
+
