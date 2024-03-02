@@ -43,7 +43,7 @@ Number of Flips:
 
 Each element will have at most 2 flips, so one flip to get the element at the maxIndex
 into the first element position, and then a second flip to flip the section of the array
-that needs that element to the end. Since it will be each element, granted
-there may be elements that are in the right position and flips aren't required, that requires
-at most 2 flips, so we would have 2n, but constants aren't important asymptotically, so we can drop 
+that needs that element to the end. Since it will be each element that requires
+at most 2 flips, granted there may be elements that are in the right position and flips aren't 
+required, we would have 2n, but constants aren't important asymptotically, so we can drop 
 the 2, leaving n. Therefore, the asymptotic runtime for the number of flips is $\Theta(n)$.
